@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--+ ====================================================================== 
+    |  JavaStreamExtensions                                                       
+    |  Ant file to clean, build, distribute the JavaStreamExtensions project                                                      
+    |  @author Corey Morgan                                                 
+    + ====================================================================== -->
+<project name="JavaStreamExtensions" default="all">
+    <description>
+        Ant file to clean, build, distribute the JavaStreamExtensions project
+    </description>
+    
+    <property environment="env" />
+    <import as="bbase" file="${env.HOME}/git/wapitia-common-test/wapitia-common-module/harness/build-wapitia-base.xml" />
+
+    <target name="all" depends="bbase.all" />
+
+</project>
